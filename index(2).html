@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6,p,ul,ol,li {
+            margin: 0;
+            padding 0;
+        }
+        * {
+            font-family: "Oswald";
+        }
+         .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .full-width {
+            width: 100%;
+        }
+        
+        .fixed-width {
+            width: 1000px;
+            margin: auto;
+        }
+        
+        .col-1 {
+            width: 980px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .col-2 {
+            width: 480px;
+            margin-left: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        
+        .col-3 {
+            width: calc(1000px/3 - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        
+        nav {
+            height: 60px;
+            background-color: black;
+        }
+        
+        nav .logo {
+            float: left;
+            width: 60px;
+            height: 60px;
+            background-color: red;
+        }
+        
+        nav .menu {
+            float: right;
+        }
+        
+        nav li {
+            float: left;
+            list-style: none
+        }
+        
+        nav .menu a {
+            display: block;
+            letter-spacing: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 60px;
+            line-height: 60px;
+            text-decoration: none;
+            color: deepskyblue;
+        }
+        header {
+            padding-top: 300px;
+            padding-bottom: 300px;
+            background-image: url(images/o5qWnp2ZmK_Tocuhl6eX-630x233.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+         #ABOUT, #PORTFOLIO, #BLOG {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+        
+        #ABOUT .col-2:nth-of-type(2) {
+            text-align: center;
+        }
+        
+        #ABOUT .col-2:nth-of-type(2) img {
+            width: 300px;
+            height: 300px;
+        }
+        
+        #PORTFOLIO {
+            background-color: lightcyan;
+        }
+        
+        #PORTFOLIO .col-3 {
+            height: 200px;
+            overflow: hidden;         
+        }
+        #PORTFOLIO .fixed-width:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+        #BLOG {        
+           background-color:lightblue;
+        }
+       #BLOG h3 {
+            margin-bottom: 30px;           
+        }
+        #BLOG p {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 25px;
+            background-color: aliceblue;
+            color: red;
+            text-decoration: none;
+        }
+        .btn-inverse {
+          display: inline-block;
+            padding:8px 25px;
+            background-color: aliceblue;
+            color: red;
+            text-decoration: none;  
+        }
+        footer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: lightyellow;
+        }
+      #about {
+            text-align: center;
+        }
+        #about .fixed-width{
+            vertical-align: middle;
+            display: inline-block;
+            font-size: 0;
+            
+        }
+        #about .fixed-width::before{
+            content: "";
+            vertical-align: middle;
+            display: inline-block;
+        }
+        #about .fixed-width .col-2s {
+            vertical-align: middle;
+            display: inline-block;
+            width: 50%;
+            font-size: 16px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav class="full-width">
+      <div class="fixed-width">         
+          <div  class="logo"></div>
+          <div class="menu">
+             <ul>
+                 <li><a href="#">ABOUT</a></li>
+                 <li><a href="#">PORTFOLIO</a></li>
+                 <li><a href="#">BLOG</a></li>
+                 <li><a href="#">CONTACT</a></li>
+             </ul>
+            </div>
+        </div>
+       </nav>
+       <header class="full-width"></header> 
+	<div class="full-width clearfix" id="ABOUT">
+           <div class="fixed-width">
+              <div class="col-2">                   
+                 <h2>皮卡丘</h2>
+                 <p>
+                   皮卡丘是一隻電氣鼠，全身的皮毛都是黃色的。它的耳朵很長，尖端是黑色的。它有小小的嘴巴，還有黑色的眼睛。它的臉頰上有兩個紅色的圓。它的前爪短而有些粗，有五個「手指」，相對地，後爪只有三個。它後背上有兩條褐色的條紋。它的尾巴是像鋸齒狀的閃電，與身體相接的部分也有一片褐色的皮毛。確切地來說皮卡丘是一隻老鼠，它跑動的時候是用四條腿著地快速地奔跑，但是更多時候它是站立著的並用兩隻後腳走路。
+                   除了它的進化形和進化前身之外，它也常被與正電拍拍、負電拍拍、帕奇利茲、電飛鼠和咚咚鼠聯繫在一起，因為它們身體有許多相似點。
+                </p>                 
+              </div> 
+              <div class="col-2">                 
+                 <img src="images/images (1).jpg" style="float: left" alt="" title="皮卡丘"> 
+           </div>
+          </div> 
+       </div> 
+       <div class="full-width clearfix" id="PORTFOLIO">
+          <div class="fixed-width clearfix">
+            <div class="col-3">
+                <img src="images/01.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/01.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/01.jpg" alt="">
+            </div>
+        </div>
+        <div class="fixed-width clearfix">
+            <div class="col-3">
+                <img src="images/641968.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/641968.jpg" alt="">
+            </div>
+            <div class="col-3">
+                <img src="images/641968.jpg"  alt="">
+            </div>
+            
+		   </div> 
+       </div>
+       <div class="full-width clearfix" id="BLOG">
+          <div class="fixed-width clearfix">
+          <div class="col-2">
+             <h3>Blog Title</h3>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vero porro sit repellat voluptatem, culpa quis iusto debitis cum est nesciunt quas placeat distinctio vitae. Cupiditate veniam sit corrupti dicta.
+             </p>
+             <a href="" class="btn">More</a>
+             <h3>Blog Title</h3>
+             <p>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem magni officia, cum maxime blanditiis vel dolor atque necessitatibus illum reprehenderit eaque laudantium, delectus cupiditate, possimus quam explicabo odit distinctio. Reprehenderit.
+             </p>
+             <a href="" class="btn">More</a>
+              </div> 
+		   </div> 
+       </div>
+       <footer class="full-width clearfix">
+       <div class="fixed-width clearfix"> 
+          <p>
+              2017 &copy; All Rights Reserved
+          </p>
+           </div>   
+       </footer>
+</body>
+</html>
